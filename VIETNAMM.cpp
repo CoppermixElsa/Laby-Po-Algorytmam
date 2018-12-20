@@ -17,15 +17,14 @@ void hanoi_towers(int quantity, int from, int to, int buf_peg)
 int main()
 {
 	setlocale(LC_ALL, "rus");
-	int start_peg, destination_peg, buffer_peg, plate_quantity; //plate_quantity-число колец, start_peg-начальное положение колец(1-3),destination_peg-конечное положение колец(1-3)
-																//buffer_peg - промежуточный колышек(1-3)
-	cout << "Номер первого столбика:" << endl;
+	int start_peg, destination_peg, buffer_peg, plate_quantity; 
+	cout << "Number of start tower is..." << endl;
 	cin >> start_peg;
-	cout << "Номер конечного столбика:" << endl;
+	cout << "Number of destignation tower is..." << endl;
 	cin >> destination_peg;
-	cout << "Номер промежуточного столбика:" << endl;
+	cout << "Number of support tower is..." << endl;
 	cin >> buffer_peg;
-	cout << "Количество дисков:" << endl;
+	cout << "Number of flats in tower is..." << endl;
 	cin >> plate_quantity;
 
 	hanoi_towers(plate_quantity, start_peg, destination_peg, buffer_peg);
